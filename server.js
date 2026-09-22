@@ -31,6 +31,7 @@ connectDB();
 App.use(apiLimiter);
 
 // Middlewares
+
 App.set("trust proxy", 1);
 App.use(cors);
 App.use(express.json()); //to able to use body in request
